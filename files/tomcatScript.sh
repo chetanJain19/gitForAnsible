@@ -8,7 +8,7 @@ sudo ufw allow from any to any port 9090 proto tcp
 sudo rm -rf /etc/tomcat9/server.xml
 sudo rm -rf /etc/tomcat9/tomcat-users.xml
 sudo cp /etc/tomcat9/server.xml /etc/tomcat9/
-sudo cp  /tmp/tomcat-install/templates/serverxml.j2 /etc/tomcat9/
+sudo cp  /tmp/tomcat-install/templates/serverxml.j2 /etc/tomcat9/server.xml
 #change the port number from 8080 to 9090
 
 #sudo sed -i 's/Connector port="8080"/Connector port="9090"/Ig' /etc/tomcat9/server.xml
